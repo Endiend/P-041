@@ -22,8 +22,8 @@
 |---|---|---|---|---|---|
 | 1 | Job 1493 — 25 ảnh, bbox `xe_may` / `o_to` / `nguoi` | @NguyenMinhTu | @NgoDuyNgoc | ✅ 100% | đã qua review |
 | 2 | Job 1709 — 25 ảnh, segmentation | @NguyenMinhTu | @DinhCongMinh | ✅ 100% | đã hoàn thành 100% segmentation, đã qua review |
-| 3 | Job 1492 — 25 ảnh, cùng nhãn | @VuTruongDuy | @NgoDuyNgoc | 🟡 75% | đang hoàn thiện nốt |
-| 4 | Job 1708 — 25 ảnh, segmentation | @VuTruongDuy | @DinhCongMinh | 🟡 70% | hoàn thành 70% tiến độ, đang tiếp tục hoàn thiện |
+| 3 | Job 1492 — 25 ảnh, cùng nhãn | @VuTruongDuy | @NgoDuyNgoc | 🟡 90% | đang hoàn thiện nốt |
+| 4 | Job 1708 — 25 ảnh, segmentation | @VuTruongDuy | @DinhCongMinh | 🟡 90% | hoàn thành 70% tiến độ, đang tiếp tục hoàn thiện |
 | 5 | Job 1491 — 25 ảnh, cùng nhãn | @PhamNguyenTuan | @NgoDuyNgoc | ✅ 100% | đã qua review |
 | 6 | Job 1707 — 25 ảnh, segmentation | @PhamNguyenTuan | @DinhCongMinh | ✅ 100% | đã hoàn thành 100% tiến độ, đã qua review |
 | 7 | Job 1490 — 25 ảnh, bbox / polygon / polyline | @DinhCongMinh | @NgoDuyNgoc | ✅ 100% | đã qua review |
@@ -33,8 +33,8 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 ## Tổng kết
 
-- Đã gán: 181 / 200 ảnh (90.5%)
-- Qua review lần đầu: 150 / 200 ảnh (75%)
+- Đã gán: 190 / 200 ảnh (95%)
+- Qua review lần đầu: 170 / 200 ảnh (85%)
 - Edge case mới: Các trường hợp xe ở xa sát nhau, màu vạch kẻ ban đêm, biển báo mờ vs biển quảng cáo, ranh giới polygon đường mờ và hiện tượng đèn giao thông phản chiếu trên gương kính tòa nhà (Job 1490).
 
 ## Vướng mắc
