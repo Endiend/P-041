@@ -23,7 +23,7 @@
 | 1 | Job 1493 — 25 ảnh, bbox `xe_may` / `o_to` / `nguoi` | @NguyenMinhTu | @NgoDuyNgoc | ✅ 100% | đã qua review |
 | 2 | Job 1709 — 25 ảnh, segmentation | @NguyenMinhTu | @DinhCongMinh | ✅ 100% | đã hoàn thành 100% segmentation, đã qua review |
 | 3 | Job 1492 — 25 ảnh, cùng nhãn | @VuTruongDuy | @NgoDuyNgoc | 🟡 75% | đang hoàn thiện nốt |
-| 4 | Job 1708 — 25 ảnh, segmentation | @VuTruongDuy | @DinhCongMinh | 🟡 50% | hoàn thành 50% tiến độ, đang tiếp tục hoàn thiện |
+| 4 | Job 1708 — 25 ảnh, segmentation | @VuTruongDuy | @DinhCongMinh | 🟡 70% | hoàn thành 70% tiến độ, đang tiếp tục hoàn thiện |
 | 5 | Job 1491 — 25 ảnh, cùng nhãn | @PhamNguyenTuan | @NgoDuyNgoc | ✅ 100% | đã qua review |
 | 6 | Job 1707 — 25 ảnh, segmentation | @PhamNguyenTuan | @DinhCongMinh | ✅ 100% | đã hoàn thành 100% tiến độ, đã qua review |
 | 7 | Job 1490 — 25 ảnh, bbox / polygon / polyline | @DinhCongMinh | @NgoDuyNgoc | ✅ 100% | đã qua review |
