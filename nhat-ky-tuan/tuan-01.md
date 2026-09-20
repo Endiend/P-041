@@ -21,23 +21,34 @@
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
 | 1 | Job 1493 — 25 ảnh, bbox `xe_may` / `o_to` / `nguoi` | @NguyenMinhTu | @NgoDuyNgoc | ✅ 100% | đã qua review |
-| 2 | Job 1709 — 25 ảnh, cùng nhãn | @NguyenMinhTu | @DinhCongMinh |  |  |
-| 3 | Job 1492 — 25 ảnh, cùng nhãn | @VuTruongDuy | @NgoDuyNgoc |  🟡 75% | chưa gán  |
-| 4 | Job 1708 — 25 ảnh, cùng nhãn | @VuTruongDuy | @DinhCongMinh | |  |
-| 5 | Job 1491 — 25 ảnh, cùng nhãn | @PhamNguyenTuan | @NgoDuyNgoc |  ✅ 100% | đã qua review |
-| 6 | Job 1707 — 25 ảnh, cùng nhãn | @PhamNguyenTuan | @DinhCongMinh |  |  |
-| 7 | Job 1490 — 25 ảnh, cùng nhãn | @DinhCongMinh | @NgoDuyNgoc |  ✅ 100% | đã qua review  |
-| 8 | Job 1706 — 25 ảnh, cùng nhãn | @NgoDuyNgoc| @DinhCongMinh |  |  |
+| 2 | Job 1709 — 25 ảnh, segmentation | @NguyenMinhTu | @DinhCongMinh | ✅ 100% | đã hoàn thành 100% segmentation, đã qua review |
+| 3 | Job 1492 — 25 ảnh, cùng nhãn | @VuTruongDuy | @NgoDuyNgoc | 🟡 75% | đang hoàn thiện nốt |
+| 4 | Job 1708 — 25 ảnh, segmentation | @VuTruongDuy | @DinhCongMinh | 🟡 50% | hoàn thành 50% tiến độ, đang tiếp tục hoàn thiện |
+| 5 | Job 1491 — 25 ảnh, cùng nhãn | @PhamNguyenTuan | @NgoDuyNgoc | ✅ 100% | đã qua review |
+| 6 | Job 1707 — 25 ảnh, segmentation | @PhamNguyenTuan | @DinhCongMinh | ✅ 100% | đã hoàn thành 100% tiến độ, đã qua review |
+| 7 | Job 1490 — 25 ảnh, bbox / polygon / polyline | @DinhCongMinh | @NgoDuyNgoc | ✅ 100% | đã qua review |
+| 8 | Job 1706 — 25 ảnh, segmentation | @NgoDuyNgoc| @DinhCongMinh | ✅ 100% | đã hoàn thành 100% tiến độ, đã qua review |
 
 Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) · ⛔ bị chặn (ghi lý do) · ⬜ chưa bắt đầu
 
 ## Tổng kết
 
-- Đã gán: 125 / 200 ảnh (%) -> bên ô lm đc bao nhiêu thì cộng vào
-- Qua review lần đầu: % ()
-- Edge case mới: 
+- Đã gán: 181 / 200 ảnh (90.5%)
+- Qua review lần đầu: 150 / 200 ảnh (75%)
+- Edge case mới: Các trường hợp xe ở xa sát nhau, màu vạch kẻ ban đêm, biển báo mờ vs biển quảng cáo, ranh giới polygon đường mờ và hiện tượng đèn giao thông phản chiếu trên gương kính tòa nhà (Job 1490).
 
 ## Vướng mắc
+
+## Job 1490 – Bounding Box, Polygon & Polyline
+
+| Khó khăn thấy trong job | Cách xử lý |
+|---|---|
+| **Các xe ở xa và gần sát sau:** khó phân biệt để đánh từng object riêng. | Zoom tối đa, căn cứ vào cụm đèn/nóc xe hoặc khoảng sáng giữa các xe để tách riêng từng bounding box; chỉ bao phần nhìn thấy rõ của từng xe, không vẽ gộp chung box. Trường hợp quá mờ dính chùm không đủ bằng chứng tách vật thể thì đánh dấu review/hỏi mentor, không tự đoán. |
+| **Buổi tối khó phân biệt được màu của vạch kẻ đường:** ánh sáng yếu và đèn xe làm lóa khiến vạch trắng và vàng dễ lẫn lộn. | Zoom lớn và đối chiếu ngữ cảnh làn đường (tim đường phân 2 chiều thường là vàng, vạch chia làn cùng chiều là trắng) hoặc quan sát frame liền kề. Nếu vẫn không thể xác định chắc chắn màu sắc thì để nhãn review xin ý kiến mentor, không tự đoán màu. |
+| **Một số biển báo mờ:** không rõ là biển quảng cáo hay là biển báo giao thông. | Không gán nhãn, đợi xin ý kiến guideline chính thức từ mentor. |
+| **Các ảnh mờ khó phân biệt vùng đi polygon shape đường:** mép đường lẫn vào vỉa hè hoặc viền thân xe. | Chỉ đánh phần nhìn rõ bằng mắt, phần không phân biệt được là viền xe hay đường thì bỏ qua, tuân thủ nguyên tắc không suy đoán ranh giới. |
+| **Các đèn giao thông ở xa mờ:** không rõ là đèn hay là phản chiếu vào gương tòa nhà. | Không đánh nhãn, đợi xin guideline cụ thể từ mentor. |
+
 ## Job 1492 – Bounding Box, Polygon & Polyline
 
 |  Khó khăn thấy trong job | Cách xử lý |
@@ -79,26 +90,31 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 ## Kế hoạch tuần 02
 
-Việc cần mentor chốt (Lead gom và hỏi một lần trong tuần)
+### Việc cần mentor chốt (Lead gom và hỏi một lần trong tuần)
 
 Các case dưới đây guideline chưa nói rõ hoặc mơ hồ. Cần mentor quyết định để ghi vào decision log (QD-xxx), tránh mỗi người làm một kiểu:
 
-Nắp capo, taplo (ego vehicle): có label ignore/unlabeled trong cấu hình batch không.
-area/drivable và area/alternative: định nghĩa cụ thể.
-Vạch kẻ đường: trong segmentation gán road hay không tô. Trong bbox/polyline, xác nhận quy ước 1 polyline ở tim vạch, kể cả vạch đôi.
-Vật thể ngoài 19 class: biển quảng cáo, guardrail, trụ cứu hỏa, thùng phuy, trạm xăng.
-Xe SUV, pickup, van: gán car hay truck.
-Núi và đồi xa: terrain hay vegetation. Tuyết phủ mặt đất: gán class nào.
-Cột đỡ biển/đèn và dây cáp mảnh: gán pole hay không tô.
-BBox cho vật bị che: xác nhận bao phần nhìn thấy và bật occluded.
-Nhãn trùng nghĩa giữa hai guideline: có ẩn 9 nhãn thừa area/ và lane/ trong job segmentation không.
-Ngưỡng ảnh tối hoặc vật quá nhỏ: có ngưỡng cụ thể để đưa review không.
-Quy tắc làm việc chung trong tuần
-Áp dụng thống nhất các cách xử lý tạm ghi trong bảng "Vướng mắc" cho đến khi có QD chính thức. Khi có quyết định, cả nhóm sửa lại các ảnh đã gán theo đúng quyết định đó.
-Vẽ vùng lớn trước (road, sky, building, vegetation), sau đó tới vật thể nhỏ, dùng Lock/Hide theo label để tránh mask chồng nhau (Rule 01).
-Ca không chắc thì tạo Issue (UNCERTAIN_CLASS, UNCERTAIN_BOUNDARY, UNCERTAIN_SMALL_OBJECT), không đoán để lấp kín ảnh (Rule 03).
-Tự review toàn ảnh và kiểm tra checklist mục 7 trước khi chuyển job sang completed.
-Rủi ro
-Lead đồng thời gán job 1706 và review job 1490–1493 cùng review xác suất 10%, dễ dồn việc vào cuối tuần. Nên review theo từng job ngay khi annotator báo xong.
-Job 1708 và 1709 (segmentation) tốn thời gian hơn bbox do ảnh tối, tuyết và nhiều vùng cây. Nếu đến 25/09 tiến độ dưới 50% thì chia lại ảnh giữa các thành viên.
-Nếu mentor chốt chậm, các quyết định tạm thời có thể phải sửa hàng loạt. Nên gửi câu hỏi sớm, đầu tuần.
+- Nắp capo, taplo (ego vehicle): có label ignore/unlabeled trong cấu hình batch không.
+- `area/drivable` và `area/alternative`: định nghĩa cụ thể.
+- Vạch kẻ đường: trong segmentation gán road hay không tô. Trong bbox/polyline, xác nhận quy ước 1 polyline ở tim vạch, kể cả vạch đôi.
+- Vật thể ngoài 19 class: biển quảng cáo, guardrail, trụ cứu hỏa, thùng phuy, trạm xăng.
+- Xe SUV, pickup, van: gán car hay truck.
+- Núi và đồi xa: terrain hay vegetation. Tuyết phủ mặt đất: gán class nào.
+- Cột đỡ biển/đèn và dây cáp mảnh: gán pole hay không tô.
+- BBox cho vật bị che: xác nhận bao phần nhìn thấy và bật occluded.
+- Nhãn trùng nghĩa giữa hai guideline: có ẩn 9 nhãn thừa `area/` và `lane/` trong job segmentation không.
+- Ngưỡng ảnh tối hoặc vật quá nhỏ: có ngưỡng cụ thể để đưa review không.
+- Quy tắc phân biệt biển quảng cáo vs biển báo mờ, và đèn tín hiệu vs ánh sáng phản chiếu gương kính tòa nhà (Job 1490).
+
+### Quy tắc làm việc chung trong tuần
+
+- Áp dụng thống nhất các cách xử lý tạm ghi trong bảng "Vướng mắc" cho đến khi có QD chính thức. Khi có quyết định, cả nhóm sửa lại các ảnh đã gán theo đúng quyết định đó.
+- Vẽ vùng lớn trước (road, sky, building, vegetation), sau đó tới vật thể nhỏ, dùng Lock/Hide theo label để tránh mask chồng nhau (Rule 01).
+- Ca không chắc thì tạo Issue (UNCERTAIN_CLASS, UNCERTAIN_BOUNDARY, UNCERTAIN_SMALL_OBJECT), không đoán để lấp kín ảnh (Rule 03).
+- Tự review toàn ảnh và kiểm tra checklist mục 7 trước khi chuyển job sang completed.
+
+### Rủi ro
+
+- Lead đồng thời gán job 1706 và review job 1490–1493 cùng review xác suất 10%, dễ dồn việc vào cuối tuần. Nên review theo từng job ngay khi annotator báo xong.
+- Job 1708 và 1709 (segmentation) tốn thời gian hơn bbox do ảnh tối, tuyết và nhiều vùng cây. Hiện Job 1708 mới đạt 50%, cần theo dõi sát để hoàn thành sớm.
+- Nếu mentor chốt chậm, các quyết định tạm thời có thể phải sửa hàng loạt. Nên gửi câu hỏi sớm, đầu tuần.
