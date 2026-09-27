@@ -1,4 +1,4 @@
-# Nhật ký tuần 01 · 22/09 – 27/09/2026
+# Nhật ký tuần 02 · 22/09 – 27/09/2026
 
 
 **Lead tuần này:** Vũ Trường Duy
@@ -20,31 +20,41 @@
 
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
-| 1 | Job 2734 — 10 ảnh, Humanpose | @NgoDuyNgoc | @PhamNguyenTuan | 🟡 50% | tiếp tục hoàn thành |
-| 2 | Job 2735 — 10 ảnh, Humanpose | @DinhCongMinh | @PhamNguyenTuan | 🟡 50% | tiếp tục hoàn thành |
-| 3 | Job 2736 — 10 ảnh, Humanpose | @VuTruongDuy | @PhamNguyenTuan | ✅ 100% | đã qua review |
-| 4 | Job 2737 — 10 ảnh, Humanpose | @NguyenMinhTu | @PhamNguyenTuan | ✅ 100% | đã qua review |
-| 5 | Job 2738 — 10 ảnh, Humanpose | @NgoDuyNgoc | @PhamNguyenTuan | 🟡 50% | tiếp tục hoàn thành |
+| 1 | Job 2734 — 5 ảnh, Humanpose | @NgoDuyNgoc | @PhamNguyenTuan | ✅ 100% | đã qua review |
+| 2 | Job 2735 — 5 ảnh, Humanpose | @DinhCongMinh | @PhamNguyenTuan | ✅ 100% | đã qua review |
+| 3 | Job 2736 — 5 ảnh, Humanpose | @VuTruongDuy | @PhamNguyenTuan | ✅ 100% | đã qua review |
+| 4 | Job 2737 — 5 ảnh, Humanpose | @NguyenMinhTu | @PhamNguyenTuan | ✅ 100% | đã qua review |
+| 5 | Job 2738 — 10 ảnh, Humanpose | @NgoDuyNgoc | @PhamNguyenTuan | ✅ 100% | đã qua review |
 | 6 | Job 2739 — 10 ảnh, Humanpose | @DinhCongMinh | @PhamNguyenTuan | ✅ 100% | đã qua review |
 | 7 | Job 2740 — 10 ảnh, Humanpose | @VuTruongDuy | @PhamNguyenTuan | ✅ 100% | đã qua review |
 | 8 | Job 2741 — 10 ảnh, Humanpose | @NguyenMinhTu| @PhamNguyenTuan | ✅ 100% | đã qua review |
-| 9 | Job 2742 — 10 ảnh, Face | @PhamNguyenTuan | @VuTruongDuy | ✅ 100% | đợi review|
-| 10 | Job 2743 — 10 ảnh, Face | @NgoDuyNgoc | @VuTruongDuy |  ✅ 100% | đợi review| 
-| 11 | Job 2744 — 10 ảnh, Face | @DinhCongMinh | @VuTruongDuy | 🟡 50% | tiếp tục hoàn thành| 
-| 12 | Job 2745 — 10 ảnh, Face | @NguyenMinhTu | @VuTruongDuy | 🟡 50% | tiếp tục hoàn thành| 
-| 13 | Job 2746 — 10 ảnh, Face | @PhamNguyenTuan | @VuTruongDuy | ✅ 100% | đợi review| 
-| 14 | Job 2747 — 10 ảnh, Face | @NgoDuyNgoc | @VuTruongDuy | ✅ 100% | đợi review| 
-| 15 | Job 2748 — 10 ảnh, Face | @DinhCongMinh | @VuTruongDuy | ✅ 100% | đợi review | 
-| 16 | Job 2749 — 10 ảnh, Face | @NguyenMinhTu | @VuTruongDuy | 🟡 50% | tiếp tục hoàn thành| 
+| 9 | Job 2742 — 5 ảnh, Face | @PhamNguyenTuan | @VuTruongDuy | ✅ 100% | đã qua review |
+| 10 | Job 2743 — 5 ảnh, Face | @NgoDuyNgoc | @VuTruongDuy |  ✅ 100% | đã qua review | 
+| 11 | Job 2744 — 5 ảnh, Face | @DinhCongMinh | @VuTruongDuy | ✅ 100% | đã qua review | 
+| 12 | Job 2745 — 5 ảnh, Face | @NguyenMinhTu | @VuTruongDuy | ✅ 100% | đã qua review | 
+| 13 | Job 2746 — 13 ảnh, Face | @PhamNguyenTuan | @VuTruongDuy | ✅ 100% | đã qua review | 
+| 14 | Job 2747 — 13 ảnh, Face | @NgoDuyNgoc | @VuTruongDuy | ✅ 100% | đã qua review | 
+| 15 | Job 2748 — 13 ảnh, Face | @DinhCongMinh | @VuTruongDuy | ✅ 100% | đã qua review | 
+| 16 | Job 2749 — 11 ảnh, Face | @NguyenMinhTu | @VuTruongDuy | ✅ 100% | đã qua review | 
 
 
 
 Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) · ⛔ bị chặn (ghi lý do) · ⬜ chưa bắt đầu
 
 ## Tổng kết
-
-
-## Vướng mắc
-    
+- Đã gán: 130 / 130 ảnh (100%)
+- Qua review lần đầu: 130 / 130 ảnh (100%)
 ## Kế hoạch tuần 03
 
+
+### Việc cần mentor chốt (Lead gom và hỏi một lần trong tuần)
+
+
+### Quy tắc làm việc chung trong tuần
+
+- Áp dụng thống nhất các cách xử lý tạm ghi trong bảng "Vướng mắc" cho đến khi có QD chính thức. Khi có quyết định, cả nhóm sửa lại các ảnh đã gán theo đúng quyết định đó.
+- Tự review toàn ảnh và kiểm tra checklist trước khi chuyển job sang completed.
+
+### Rủi ro
+
+- Nếu mentor chốt chậm, các quyết định tạm thời có thể phải sửa hàng loạt. Nên gửi câu hỏi sớm, đầu tuần.
